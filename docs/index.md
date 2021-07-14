@@ -1,3 +1,6 @@
+[relative md link](./qc.md)
+[relative html link](./qc.html)
+
 ## Welcome to GitHub Pages
 
 You can use the [editor on GitHub](https://github.com/AndrewOwenMartin/AndrewOwenMartin.github.io/edit/master/docs/index.md) to maintain and preview the content for your website in Markdown files.
