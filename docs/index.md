@@ -1,2 +1,2 @@
 - [Notes on Quantum Computing](./qc.md)
-- [Notes on Artificial Intelligence(./ai.md)
+- [Notes on Artificial Intelligence](./ai.md)
