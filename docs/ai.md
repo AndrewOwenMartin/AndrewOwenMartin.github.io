@@ -1,8 +1,21 @@
 # AI
+# if NFL is true, there can not be GAI.
 
 # The primary sense is 'feel'
 
 Vision is not what you think it is. What you are experiencing is 'feel', vision is a component of that but no more important than history and situational knowledge.
+
+When you're looking around you can see that you're in a street or that you're in a room. If you close your eyes that experience is drastically different, for sure, but pay close attention to the "feelings" that remain. Of you are still likely to "feel" that you are in the street or a room. If you were feeling bored or stressed with your eyes open you'll probably still feel bored or stressed with your eyes closed.
+
+It is sometimes said that vision is the primary sense, it seems to be the most important and first way we learn about what's going on. It is also said (I've heard it from a community which was either about deafness or blindness, I forget) hearing is the social sense.
+
+A neuroscientist said that smell is the primary sense. Defining smell as the sense where soluable chemicals contact the cell membrane. Even touch, oressure sensitivity cones later evolutionarily. Maybe metabolism, but even that assmes soluable chemicals.
+
+# Your own mind is doing the heavy lifting
+
+If you see an image that claims to he the output of some computer vision system remember that what you're experiexperiencing is the result of your own act of perception and experience on top of whatever the computer output.
+It's easy to see the output of an edge detector and say to yourself "yeah, that looks like the edges are highlighted in white" but then you're doing your own "edge detection" and checking that the result is more or less plausible.
+The real output of an edge detector will look like a list, an easily interpretable JSON object, a binary string that in a conventional format for listing edges, or ultimately some intelligent behavior.
 
 # context in AI is like management.
 
@@ -20,6 +33,14 @@ You end up with something like a distributed system of autonomous (as autonomous
 This is probably anathema to modern business, but may lead to more sustainable growth.
 
 # goodhart's law
+
+All AI risks turning a metric into a goal.
+This is fine so long as the metric captures the entire context.
+Otherwise you will have artificial maximising of an output, not an outcome.
+Especially common is to tune an AI to a context in which the AI itself doesn't exist.
+> What is a good example of this? 
+> Something where the existance of the AI changes behaviour. Like the random skinner box.
+> Maybe votes, encouraging popularism?
 
 # there is no true autonomy
 
