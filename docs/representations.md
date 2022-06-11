@@ -1,5 +1,7 @@
 # The problem with representations
 
+All models are wrong, some are useful. This isn't news, but it is of profound importance when changing contexts.
+
 The problem with representations is that they must be selective in what they represent.
 <span id="arg-no-full-representations">A representation which represents all aspects of an item will contain irrelevant detail and probably cost a lot to maintain.
 
@@ -13,10 +15,14 @@ Nevertheless this crude representation is sufficient for the fairground oeprator
 
 <span id="extra-info-in-complex-formal-systems">In situations that are well defined, yet complex, such as in a game of chess, a representation of the game state may be sufficient to encode all the information to represent the state such as to duplicate the state, yet insufficient to represent the state for the purposes of planning a strategy. Maybe it is important to see which pieces are protected or which pieces may be under threat within a single move. All may be inferred from the formal state, but these extra representations are not enough to allow the representation to be used for AI, and only for reporting of a historical game.
 
+- Being-there vs objectivity.
+When you're "there" you experoence all things outside of the object, relevant or not, and your attention and experience tells you what to attend to. When you are objective, then you must have decided what is relevant beforehand. The same stuff is represented in all cases, irrelevant stuff gets included and relevant stuff gets excluded.
+
 ## Upcoming points
 
 - Who is the representation really for? The homunculus?
 - Dennett's R2D2
+- It's a question of being-there vs objectivitt.
 
 
 # Footnotes

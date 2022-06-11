@@ -27,6 +27,10 @@ Here's what I want to convince you of.
 
   Natural Neural Networks are dynamic and really implement different transient feed forward networks. Training is not separate from doing.
 
+- Minimally cognitive agents
+
+  Froese paper
+
 next articles
 1. is it true that GAI requires being totally objective and at least somewhat subjective at the same time? Is it the case that even if you have a countably infinite number of cycles, you can't analyse an uncountably infinite number of options?
 2. am I justified in my strong use of the no free lunch theorems?

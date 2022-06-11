@@ -13,8 +13,13 @@ Even worse for the General AI team, there will not even be an in-all-cases optim
 One implication is that any algorithm which seems to perform better than another in real world situations is only doing so because the real world is presenting only a susbset of all possible inputs and the chosen algorithm is simply tumed towards them.
 
 So what about things that really seem like they have optimal algorithms? Consider the game of Nim, or a lookup table for the best move to make in noughts and crosses.
+This seems like a perfect case of the best algorithm existing, but even with the abstract knowledge of the ideal game tree, there is still the requirement to properly search the tree to resolve the current state with the best next move.
+Consider a lookup table, sequential search. Ordered list, binary search. Hashmap, even if all states are encoded, you still need an algorithm to identify the glcurrent game state, hash it, and access the appropriate key.
 
 This is how the NFL theorems are introduced in my thesis.
+
+# My folk interpretation
+Something cant be the same as something else, it cant be universally better, so there must be a tradeoff.
 
 # Introduction
 
