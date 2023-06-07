@@ -1,0 +1,1 @@
+After being processed by Census and excise I was given some abrupt orders to report to an intelligence agent in Balmora. I was immediately accosted by a Bosmer who asked if I'd seen his ring. Indeed, I had been compelled to pick it up, I have no idea why that stood out to me of all the trash in that office but that was the only think I took and immediately gave it away.
