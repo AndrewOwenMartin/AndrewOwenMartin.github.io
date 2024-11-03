@@ -40,3 +40,16 @@ next articles
 2. am I justified in my strong use of the no free lunch theorems?
 
 so this is a test of Google voice typing I want to see if there's any good for writing technical articles walking down the high street nowjust blabbering on not using any particular voice might be might be speaking speaking a bit louder I feel quite normal soso what's the item I want to justify non-rational list theories of mind I want I want to have something to prove to where people make unjustified claims or claims about AI that clearly show they've got a underlying philosophy they didn't realise
+
+# main critiques of AI
+- chinese room
+- frame problem
+  - 84 McCarthy. Some philosophical problems...
+  - 33 Dennett. Cognitive wheels.
+- symbol grounding 59
+- dreyfus's heidggerian 42,43,45
+
+
+online learning is the key. learn "whilst" doing, not separate phases.
+
+Cellular Automata appear lifelike because they simulate the environment.
