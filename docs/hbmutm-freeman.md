@@ -67,3 +67,31 @@ You can destroy parts of the brain, such as the left lateral hemisphere for lang
 Each cell is like a person in a society, infinitiely complex and unable to function outside of the whole.
 
 A neuron has dendrites which look like a bush or a tree, splitting multiple times. Each neuron has exactly one axon. In the language of Python type hinting `dentrites: Tree[Position], axon: Position`
+
+In the cerebral cortex there are two types of neuron, projection neurons and local neurons. Projection neurons have dendrites which spread over up to 1mm, the main trunk will point to the surface of the cortex, and three or four other branches point "sideways". The Axon can be up to 1 meter! Each axon has "side branches" called Axon Collaterals. Local Neurons has dendrites over an area up to 0.1mm (25-50 cell body widths) evenly spread in all directions.
+
+Neurons mostly have all excitatory or inhibitory synapses. Projection neurons are mostly excitatory.
+
+"several thousand" synapses on each neuron.
+
+Most important state variables for a neuron, i) potential across the membrane (indicating an axon), ii) potential across the tissue around it (indicating a dendrite). 
+
+Neurons have dendrites which have switches at their membranes, turned on at synapses, which causes current to flow. This current is integrated in the cell body which determines the frequency of the output from the axon. The axon has an output train of pulses, which can increase in frequency, but cannot be superimposed due to the refractory period of a neuron.
+
+The movement of current from the synapse to the cell body causes a potential across the membrane. The current flows to the cell body, which then flows in the opposite direction, outside of the neuron back to the synapse at the dendrite. The current flowing within a single neuron can be detected with two probes on the membrane, and represents the activity of a neuron. The current flowing outside of a neuron can be detected with two neurons in the "neuropil" which surrounds the neurons and represents the activity of a population of neurons.
+
+There is no attentuation in the pulse train. There is loss of power with dendritic synapses which are further away from the cell body. But there is room for more synapses at a larger distance.
+
+The minimum pulse rate for a healthy neuron is 1 per second.
+
+Neurons are stimulated like an S-curve by pulses, the first few are highly stimulating, then there is a linear relation, following that pulses become less stimulating.
+
+A population of interconnected inhibitory neurons will maintain a steady state of pulses as one neuron inhibits the other and in doing so reduces the inhibition onto other neurons, this brings those other neurons into activity, and they start inhibiting the original neuron. Similarly positive neurons lead to a steady state as each neuron stimulated more activity out of each other neuron until they are all firing at the maximum rate a neuron can achieve. Given a mix of stimulatory and inhibitory neurons a steady state will be achieved but with a rate somewhere between the maximum and minimum firing rates, ideally at the rate where there is a linear relation between pulse trains.
+
+Autofeedback (one neuron stimulating itself) need not be considered as each neuron has around ten thousand outputs and around ten thousand inputs, so a neuron train from one more neuron will not make a significant difference.
+
+Sensory neurons don't have any interconnections, rather they transmit in parallel.
+
+One thousandth of a second is a reasonable temporal resolution for a neuron state space.
+
+In populations, wave-pulse conversion is always nearly linear.
