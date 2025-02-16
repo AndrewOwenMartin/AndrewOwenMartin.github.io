@@ -133,7 +133,7 @@ This still has limitations, however, if you tried to make the component add a ne
 
 3. Reimplenting the custom hook to work in a list
 
-We have to start again.
+The problem here is that we have to write a new hook which has all the features of our Counter hook and all the features of a list hook combined. It feels a but like having to start again, this is no terrible chore when we are writing a simple Counter hook, but if you are using a more complicated component, or have already implemented some elegant code for handling tricky edge cases, then this can be time consuming and inviting bugs.
 
 ```typescript
 const useCounterList = (counterNum, initCountList) => {
@@ -204,5 +204,9 @@ counterReducer
 
 listReducer
 ```
+
+9 
+ 1kq 
+This example immeditely looks much more complicated than the previous examples, but there are a few advantages. Firstly, by passing aroind only one setter function (the `dispatch`) you avoid a callback hell which quickly gets unmanageable if you work with nested components or, god forbid, recursive functions.
 
 # normal hook example
