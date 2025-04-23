@@ -37,28 +37,31 @@ In this article are a number of ways of using hooks from the first way you'll le
 The first thing you learn when writing hooks is to read and write state using the `useState` hook. As far as I'm aware, the "hello world" of hooks is a button which increments a displayed value when you click it. I'll call this `Counter`, and the a component with a bunch of these values may look something like this.
 
 ```typescript
-const Counter = ({initCount}) => {
+const Counter = ({ initCount }: { initCount: number }) => {
+  const [count, setCount] = React.useState(initCount);
 
-  const {count, setCount} = React.useState(initCount)
+  const increment = () => setCount(count + 1);
 
-  const increment = () => setCount(count+1)
+  const reset = () => setCount(initCount);
 
-  const reset = () => setCount(initCount)
+  return (
+    <div>
+      <button onClick={increment}>Count!</button>
+      <button onClick={reset}>Reset</button>
+      Count: {count}
+    </div>
+  );
+};
 
-  return <div>
-    <span>Count: {count}</span>
-    <button onClick={increment}>Count!</button>
-    <button onClick={reset}>Reset</button>
-  </div>
-}
-
-const MyCounters = () => {
-  return <div>
-    <Counter initCount={0} />
-    <Counter initCount={10} />
-    <Counter initCount={100} />
-  </div>
-}
+export const MyCounters = () => {
+  return (
+    <div>
+      <Counter initCount={0} />
+      <Counter initCount={10} />
+      <Counter initCount={100} />
+    </div>
+  );
+};
 ```
 
 So far so good, but this has a big problem that the state of each counter cannot be read or modified in any way other than the component itself. That is, each Counter can change its own value, but nothing else can. This is a problem if you hope to use the Counter in a larger App. The most common example of this is when you need to increment more than one counter with a single click, or when you want to have a global "reset all counters" button.
@@ -70,47 +73,58 @@ So let's look at a way this can be achieved by separating the hook from the stat
 Custom hooks sound scary, but anyone who is already using hooks is more or less already writing the same code, they just wrap it up differently.
 
 ```typescript
-const useCounter = (initCount) =>{
-  const {count, setCount} = React.useState(initCount)
+const useCounter = (initCount: number) => {
+  const [count, setCount] = React.useState(initCount);
 
-  const increment = () => setCount(count+1)
+  const increment = () => setCount(count + 1);
 
-  const reset = () => setCount(initCount)
+  const reset = () => setCount(initCount);
 
   return {
     count,
     increment,
     reset,
-  }
-}
-const Counter = ({count, increment, reset}) => {
+  };
+};
 
-  return <div>
-    <span>Count: {count}</span>
-    <button onClick={increment}>Count!</button>
-    <button onClick={reset}>Reset</button>
-  </div>
-}
+const Counter = ({
+  count,
+  increment,
+  reset,
+}: {
+  count: number;
+  increment: () => void;
+  reset: () => void;
+}) => {
+  return (
+    <div>
+      <button onClick={increment}>Count!</button>
+      <button onClick={reset}>Reset</button>
+      Count: {count}
+    </div>
+  );
+};
 
-const MyCounters = () => {
-
-  const zeroCounterHook = useCounter(0)
-  const tenCounterHook = useCounter(10)
-  const hundredCounterHook = useCounter(100)
+export const MyCounters = () => {
+  const zeroCounterHook = useCounter(0);
+  const tenCounterHook = useCounter(10);
+  const hundredCounterHook = useCounter(100);
 
   const resetAll = () => {
-    zeroCounterHook.reset()
-    tenCounterHook.reset()
-    hundredCounterHook.reset()
-  }
+    zeroCounterHook.reset();
+    tenCounterHook.reset();
+    hundredCounterHook.reset();
+  };
 
-  return <div>
-    <Counter {...zeroCounterHook} />
-    <Counter {...tenCounterHook} />
-    <Counter {...hundredCounterHook} />
-    <button onClick={resetAll}>Reset all</button>
-  </div>
-}
+  return (
+    <div>
+      <Counter {...zeroCounterHook} />
+      <Counter {...tenCounterHook} />
+      <Counter {...hundredCounterHook} />
+      <button onClick={resetAll}>Reset all</button>
+    </div>
+  );
+};
 ```
 
 This decoupling of the state code from the component allows us to manipulate the state in a number of ways but also allows us to have multiple components that benefit from the same hook. It also allows us to define a 'public interface' to the hook, note that `setCount`is not returned from the hook, so any developer wanting to use this code is less likely to manipulate the state in an invalid way.

@@ -1,4 +1,3 @@
-- [Notes on Quantum Computing](./qc.md)
 - [Notes on Artificial Intelligence](./ai.md)
 - [Notes on Representations](./representations.md)
-- [Morrowind Journal](./morrowind/)
+- [Japan](./japan)
