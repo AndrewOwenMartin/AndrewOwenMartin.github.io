@@ -1,26 +1,3 @@
-# Planning
-
-## General plans
-
-I think 3 nights in Kyoto makes sense as there's so much to do.
-
-## Locations to go
-
-Golden Gai (Shinjuku) is basically Midnight Diner. The outside is filmed in Kabukicho alleys.
-
-Love hotels could be fun.
-
-## Cities/Regions to visit - Definite
-
-Nara - Deer Park
-Nara - Big Temple
-
-Kyoto - Bamboo forest
-Kyoto - W
-
-
-# Appendix
-
 ## Old trip
 780.00 GBP = £60 * 13 days = 134,929.12 JPY
 

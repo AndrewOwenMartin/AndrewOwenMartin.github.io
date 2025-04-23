@@ -8,9 +8,21 @@ That means we have two full working weeks, and the weekend between. Otherwise, w
 
 I want to go to Nara, Himeji, Miyaima, Takayama.
 
-Emi wants Hiroshima.
+Emi wants Hiroshima and the snow monkeys.
 
-We should visit Kyoto.
+I think 3 nights in Kyoto makes sense as there's so much to do.
+
+# Locations
+
+Golden Gai (Shinjuku) is basically Midnight Diner. The outside is filmed in Kabukicho alleys.
+
+Love hotels could be fun.
+
+Nara - Deer Park
+Nara - Big Temple
+
+Kyoto - Bamboo forest & Cycling in Nishikyo
+Kyoto - W
 
 
 # Calendar
