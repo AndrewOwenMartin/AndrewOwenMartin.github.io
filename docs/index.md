@@ -1,3 +1,2 @@
 - [Notes on Artificial Intelligence](./ai.md)
 - [Notes on Representations](./representations.md)
-- [Japan](./japan)
